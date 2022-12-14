@@ -1,4 +1,4 @@
-/*======GOOGLE FONT======*/
+/*======GOOGLE FONTS======*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 /*======REST======*/
@@ -29,7 +29,7 @@ $decresetColor: #e67d7d;
 
 /*----FONT-----*/
 $FS: min(2.25rem, 3vh);
-
+$f-family: 'Poppins', sans-serif;
 /*----GENERAL---*/
 $radius: 0.5rem;
 $padding: 1rem;
@@ -47,10 +47,10 @@ html {
 	font-size: 62%;
 }
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: $f-family;
 	line-height: 1.6;
 	background: $bg;
-	transition: all 0.3s linear;
+	transition: $transition;
 }
 
 main {
@@ -59,8 +59,7 @@ main {
 	align-items: center;
 	margin: 20rem auto;
 }
-
-/*==========box===============*/
+/*=======box=========*/
 .card-container {
 	width: 80rem;
 	height: 50rem;
@@ -96,7 +95,6 @@ main {
 		opacity: 1;
 	}
 }
-
 .card-body {
 	flex: 1 1 40%;
 	width: 40%;
@@ -118,20 +116,17 @@ main {
 	font-weight: 700;
 	margin-top: 1rem;
 }
-
 /*-------BUTTON---------*/
 .btn-grid {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -1rem;
 }
-
 .btn-grid .btn-wrap {
 	display: 1 1 50%;
 	width: 50%;
 	padding: 1rem;
 }
-
 button {
 	display: block;
 	width: 100%;
@@ -177,7 +172,6 @@ button.size.selected::after {
 	right: 0;
 	bottom: 0;
 }
-
 /*-------BUTTON COLORS---------*/
 .colors .btn-wrap .black.selected {
 	background-color: #212121;
